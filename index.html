@@ -3,131 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whiskey | 900+ Members</title>
-    
-    <meta property="og:title" content="Whiskey™ | Official Server">
-<meta property="og:description" content="Join 900+ members in the ultimate chill & social community. 24/7 active chat & giveaways!">
-<meta property="og:theme-color" content="#000000">
-<meta name="theme-color" content="#000000">
-
-    
+    <title>Whiskey™ | Official Site</title>
     <style>
+        /* BASE THEME */
         body {
-            /* STRICT BLACK */
             background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: white;
-            font-family: 'Segoe UI', sans-serif;
-            text-align: center;
         }
 
-        /* ALL HEADINGS SET TO 40PX */
-        h1, h2, h3 {
-            font-size: 40px !important;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            font-weight: bold;
+        /* MASSIVE HEADER */
+        header {
+            width: 100%;
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #111, #000);
+            border-bottom: 2px solid #ff4d4d;
         }
 
         h1 {
-            margin-top: 40px;
-            letter-spacing: 5px;
-            text-shadow: 0 0 15px #fff;
+            font-size: 3rem; /* MASSIVE */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .credits {
+            font-size: 1.2rem;
+            color: #ff4d4d;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        /* CONTENT STYLING */
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: left;
         }
 
         h2 {
-            color: #ffffff;
-            margin-top: 30px;
+            font-size: 2.5rem;
+            color: #ff4d4d;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-top: 50px;
         }
 
-        h3 {
-            color: #ff4d4d; /* Red for Rules */
-            text-shadow: 0 0 10px #ff4d4d;
-            margin-top: 30px;
+        .rules-list {
+            list-style: none;
+            padding: 0;
+            font-size: 1.5rem;
+            line-height: 2;
         }
 
-        .stats {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
+        .rules-list li::before {
+            content: "• ";
             color: #ff4d4d;
             font-weight: bold;
         }
 
-        .content-box {
-            max-width: 700px;
-            text-align: left;
+        /* THE ESSAY SECTION */
+        h3 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-top: 60px;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+        }
+
+        .essay-content {
+            font-size: 1.2rem;
             line-height: 1.8;
-            padding: 25px;
-            border: 1px solid #333;
+            color: #cccccc;
+            background: #0a0a0a;
+            padding: 30px;
             border-radius: 15px;
-            margin-bottom: 40px;
-            background: #050505; /* Slightly lighter black for contrast */
+            border: 1px solid #222;
+            box-shadow: 0 0 40px rgba(255, 77, 77, 0.05);
         }
 
-        p {
-            font-size: 1.1rem;
-            white-space: pre-line;
-            opacity: 0.9;
+        .essay-content p {
+            margin-bottom: 25px;
         }
 
-        /* THE JOIN BUTTON */
-        .join-btn {
-            text-decoration: none;
-            color: white;
-            font-size: 1.5rem;
+        /* FINAL CALL TO ACTION */
+        .join-section {
+            text-align: center;
+            margin: 80px 0;
+            padding: 40px;
+            border-top: 1px solid #333;
+            width: 100%;
+        }
+
+        .join-text {
+            font-size: 2rem;
             font-weight: bold;
-            padding: 20px 80px;
-            border: 2px solid white;
-            border-radius: 50px;
-            transition: 0.4s;
-            background: transparent;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-            margin-bottom: 60px;
-            display: inline-block;
+            margin-bottom: 30px;
         }
 
-        .join-btn:hover {
-            background: white;
-            color: black;
-            box-shadow: 0 0 40px #fff;
-            transform: scale(1.05);
+        .massive-join-btn {
+            display: inline-block;
+            padding: 25px 80px;
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            border: 4px solid #ffffff;
+            border-radius: 60px;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        .massive-join-btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+            box-shadow: 0 0 50px #ffffff;
+            transform: scale(1.1);
+        }
+
+        /* IMAGE HANDLING */
+        .brand-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h1>WHISKEY</h1>
-    
-    <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20260314_215411.jpg" style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 20px rgba(255,255,255,0.4); margin-top: 20px;">
+    <header>
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20260314_215411.jpg" style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 20px rgba(255,255,255,0.4); margin-top: 20px;"
+" alt="Whiskey" class="brand-img">
+        <h1>WHISKEY™</h1>
+        <div class="credits">OWNER: @sukuna | ADVERTISER: @Empire_Neel</div>
+    </header>
 
-    <div class="stats">900+ MEMBERS • ACTIVE NOW</div>
-    
-        <h2>•ABOUT THE SERVER•</h2>
-        <p>you can chill and chat in this server...</p>
+    <div class="container">
         
+        <h2>SERVER RULES</h2>
+        <ul class="rules-list">
+            <li>No DM advertisement</li>
+            <li>No spamming</li>
+            <li>No using of abusive languages and words</li>
+        </ul>
 
-    <div class="content-box">
-        <h2>ABOUT THE SERVER</h2>
-        <p>you can chill and chat in this server with 900 over people/members.
-        There are money giveaway like 80rs/1$.
-        the chat is 24/7 active. People/members are chatting.
-        you can ping people like @user,@sukuna-the owner of the server,@Empire_Neel:-helper/advertiser.
-        This chilling server has its own bot. The bot name is @Zyphara/@Whiskey Support (+)</p>
-        We have autoroles like blood knight.
-       
-        <h3>RULE OF THE SERVER</h3>
-        <p>no spamming. If you still spam goodluck to have timeout for 10 minutes it doesn't mean about message it also means about gif and all message stuff.
-        no spamming pings or you would get demoted/timeout if you don't have admin roles</p>
+        <h3>The Philosophy of Whiskey™</h3>
+        <div class="essay-content">
+            <p>In the sprawling, often chaotic landscape of the digital age, the human need for connection has shifted from physical town squares to virtual sanctuaries. Among these, one name has begun to resonate with a distinct, premium frequency: <strong>Whiskey™</strong>. What began as a vision by @sukuna has transformed into a high-octane community of over 900 active members, proving that in a world of a billion servers, authenticity and "vibes" are the ultimate currencies.</p>
+            
+            <p>At its core, Whiskey™ is built on a paradox: it is a high-energy hub that remains a "peaceful relationship" sanctuary. In most corners of the internet, digital friendships are fragile. Whiskey™ disrupts this trend. It is designed as a space where, even if a connection falters, the environment is so stable and welcoming that "you can get the friend back." This isn't just a server; it’s a social safety net.</p>
+
+            <p>A sanctuary is only as strong as the people within it, and the growth of Whiskey™ is a masterclass in modern digital advertising. Led by @Empire_Neel, the strategy relies on the allure of exclusivity and the promise of a "melt-in" experience. When an advertiser can confidently state that a user will become "addicted" to the atmosphere, it signals a product that seeks to provide a genuine lifestyle shift.</p>
+
+            <p>Why do people "melt" into Whiskey™? Because it offers what the real world often lacks: a space to chill without the fear of judgment. It is a digital oasis where the black-and-red aesthetic meets a white-hot passion for community. You don't just join Whiskey™; you become part of a digital movement where the friendships are as strong as the brand itself.</p>
+        </div>
+
     </div>
 
-    <a href="https://discord.gg/yjzAZRdYk" class="join-btn">
-        Join Server
-    </a>
+    <div class="join-section">
+        <div class="join-text">Do you wanna join our Whiskey family?</div>
+        <a href="https://discord.gg/yjzAZRdYk" class="massive-join-btn">JOIN SERVER NOW</a>
+    </div>
 
 </body>
 </html>
-
